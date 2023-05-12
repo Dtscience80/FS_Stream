@@ -1,0 +1,9 @@
+plotly
+scikit-learn
+streamlit
+matplotlib
+seaborn
+pyDeck
+sklearn-genetic
+statsmodels
+mlxtend
