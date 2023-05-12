@@ -101,13 +101,13 @@ stc.html(html_temp)
 
 #Multiple files
 #adding a file uploader to accept multiple CSV file
-delimiter = ','
+delimiter = ';'
 data =[]
 
 judul = st.text_input("Tuliskan Nama data anda")
 
 st.markdown(' ##### Pilih Delimiter (separator) file yang dipakai ! ')
-delimiter = st.selectbox('Tentukan Delimiter file tabel anda !', (':', ';', ',', '.', '/', '|', '+'))
+delimiter = st.selectbox('Tentukan Delimiter file tabel anda !', (';', ',', ':', '.', '/', '|', '+'))
 st.write('Delimiter file tabel anda \'', delimiter + '\'')
 
 uploaded_files = st.file_uploader("Please Upload data tabel dalam bentuk csv file", accept_multiple_files=True)
